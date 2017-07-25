@@ -1002,7 +1002,6 @@ img {
   width: 50%;
   background-position: center left;
   background-image: url(imgs/ryan-profile-crop.jpg);
-  background-repeat: repeat-y;
   background-attachment: fixed; }
 
 .about-info {
