@@ -1,0 +1,90 @@
+.project-content
+  z-index: 10
+  position: relative
+  padding: 100px 0
+  max-width: 1000px
+  margin: 0 auto
+  text-align: center
+p
+  font-family: roboto
+  font-size: 1.2em
+
+h1
+  font-family: roboto
+  font-weight: 400
+
+.project-container
+  padding: 100px 0
+  max-width: 1000px
+  margin: 0 auto
+  text-align: center
+
+figure
+  margin: auto
+
+img
+  max-width: 100%
+
+.project-container
+
+  figure
+    margin-bottom: 20px
+    position: relative
+    opacity: 0
+    transform: translateX(20px)
+    transition: all 0.3s ease-in-out
+    overflow: hidden
+    cursor: pointer
+
+    &.is-showing
+      opacity: 1
+      transform: translateX(0px)
+
+    img
+      display: block
+      transform: scale(1)
+      transition: all 0.3s ease-in-out
+
+    &:hover
+      figcaption
+        left: 0%
+
+      img
+        transform: scale(1.1)
+
+  figcaption
+    position: absolute
+    bottom: 10px
+    left: -170%
+    background: red
+    color: white
+    padding: 20px 60px
+    font-size: 16px
+    font-weight: 400
+    transition: all 0.3s ease-in-out
+    font-family: roboto
+    text-transform: uppercase
+    opacity: .8
+
+.about-containter
+  z-index: 10
+  position: relative
+  background-color: #eee
+  display: flex
+  align-items: center
+
+.about-photo
+  height: 100vh
+  width: 50%
+  background:
+    position: center left
+    image: url(imgs/ryan-profile-crop.jpg)
+    repeat: repeat-y
+    attachment: fixed
+
+.about-info
+  width: 50%
+  padding: 0 80px 0 20px
+
+strong
+  font-size: 40px

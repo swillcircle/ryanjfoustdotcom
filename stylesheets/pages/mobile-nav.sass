@@ -1,0 +1,103 @@
+
+
+
+.hamburger-icon
+  z-index: 1000
+  position: absolute
+  width: 20px
+  height: 20px
+  margin: auto
+  left: 0
+  top: 0
+  right: 0
+  bottom: 1px
+
+
+.hamburger-bar
+  background-color: #000
+  height: 3px
+  width: 100%
+  border-radius: 3px
+  position: absolute
+  left: 0
+  transition: all 0.25s ease-in-out
+
+
+.hamburger-bar-2
+  top: 0
+  bottom: 0
+  margin: auto
+
+
+.hamburger-bar-3
+  bottom: 0
+
+
+.menu.open .hamburger-bar-1
+  transform: translateY(13px) translateY(-50%) rotate(45deg)
+
+
+.menu.open .hamburger-bar-2
+  opacity: 0
+
+
+.menu.open .hamburger-bar-3
+  transform: translateY(-7px) translateY(50%) rotate(-45deg)
+
+.menu
+  display: none
+
+////////////////////////////////////////////////// Mobile Nav
+
+.mobile-nav
+  z-index: 900
+  position: fixed
+  display: flex
+  padding: 10px 0
+  transition: max-height .3s, padding .3s
+  background-color: rgba(0, 0, 0, 0.8)
+  width: 100%
+  height: 100vh
+  margin: auto
+  flex-direction: column
+  justify-content: center
+
+  &.is-closed
+    max-height: 0
+    padding: 0
+    display: none
+
+@media only screen and (min-width: 1101px)
+  .mobile-nav
+    display: none
+
+@media only screen and (max-width: 1100px)
+  .mobile-nav-item
+      display: block
+      text-align: center
+      padding: 10px 0
+      color: #fff
+      font-family: 'Raleway', sans-serif
+      font-weight: bold
+      font-size: 3em
+      text-transform: uppercase
+      text-decoration: none
+      letter-spacing: .10em
+  .menu
+    z-index: 1000
+    display: block
+    position: fixed
+    top: 50
+    left: 50
+    height: 40px
+    width: 40px
+    padding-left: 20px
+  .nav-item
+    display: none
+
+@media only screen and (max-width: 600px)
+  .nav-hero
+    font-family: Roboto Slab
+    font-size: 2em
+    letter-spacing: 7px
+    transition: all .5s

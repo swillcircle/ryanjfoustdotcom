@@ -1,0 +1,123 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width')
+         
+    meta(charset='uft-8')
+         
+    title Ryan J Foust
+         
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100,400,900', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet', type='text/css')
+         
+    link(rel='stylesheet', href='styles.css')
+    link(rel='stylesheet', href='skeleton.css')
+     
+  body
+    header.top-header
+      a.insta-icon(href="https://www.instagram.com/ryanjfoust/")
+        img(src='imgs/instagram.svg')      
+      .menu
+        a.menu-link(href='#')
+          span.hamburger-icon
+            span.hamburger-bar.hamburger-bar-1
+            span.hamburger-bar.hamburger-bar-2
+            span.hamburger-bar.hamburger-bar-3
+            
+    nav.mobile-nav.is-closed
+      a.mobile-nav-item(href='') FOOTWEAR
+      a.mobile-nav-item(href='') SKETCHBOOK
+      a.mobile-nav-item(href='') ABOUT
+      a.mobile-nav-item(href='') CONTACT
+      
+    nav.nav-bar
+      a.nav-hero(href='') Ryan J Foust
+      a.nav-item.nav-item1(href='') FOOTWEAR 
+        ul  
+      a.nav-item(href='') SKETCHBOOK
+        ul
+      a.nav-item(href='') ABOUT
+        ul
+      a.nav-item(href='') CONTACT  
+        ul
+    .hero-container
+      .hero-logo
+        h1.top-logo Ryan J Foust
+        h1.middle-logo FOOTWEAR
+        h1.bottom-logo DESIGNER
+      .boot
+    section.project-content
+
+      h1 Ryan J Foust
+      
+      hr
+      
+      p As a footwear designer for over 12 years, Ryan J. Foust has designed a plethora of highly successful lifestyle and technical footwear for market leading brands with domestic and international reach
+
+      
+      hr
+      
+      .project-container
+
+        .row.img-row
+          figure.columns.four
+            img(src="imgs/code_sampler_09-min.jpg")
+            figcaption Project Code
+          
+          figure.columns.four
+            img(src="imgs/deepcuts-final-hero.jpg")
+            figcaption Project DeepCuts
+            
+          figure.columns.four
+            img(src="imgs/exodus-hero.jpg")
+            figcaption Project Exodus
+        .row.img-row
+          figure.columns.four
+            img(src="imgs/iEnergy-hero.jpg")
+            figcaption Project iEnergy
+          
+          figure.columns.four
+            img(src="imgs/motervation-hero.jpg")
+            figcaption Project MotorVation
+            
+          figure.columns.four
+            img(src="imgs/womens-hero.jpg")
+            figcaption Project Womens
+            
+        .row.img-row
+          figure.columns.four
+            img(src="imgs/nike-hero.jpg")
+            figcaption SketchBook
+          
+          figure.columns.four
+            img(src="imgs/northface-hero.jpg")
+            figcaption Self Project
+    .about-containter
+      .about-photo
+      .about-info <strong>Designing since 1932</strong> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    
+    footer
+    .row.footer-stuff
+      .columns.three
+        h8 FIND ME
+        ul
+          li: a(href="") Twitter
+          li: a(href="") Facebook
+          li: a(href="") Pinterest
+          li: a(href="") Instagram
+      
+      .columns.three
+        h8 OTHER SHOPS
+      
+      .columns.six
+        p Sign Up and Stay in Touch
+        
+        form.row
+          .columns.eight
+            input.u-full-width(type="email" placeholder="Your Email")
+          .columns.four
+            input.button-primary(type="submit")
+            
+    script(type='text/javascript', src='js/jquery-3.2.1.min.js')   
+    script(type='text/javascript', src='js/scripts.js')  
+    footer
