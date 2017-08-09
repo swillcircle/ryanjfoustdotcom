@@ -1028,7 +1028,8 @@ strong {
 
 .footer-stuff {
   margin: 0 10%;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
 
 .hamburger-icon {
   z-index: 1000;
