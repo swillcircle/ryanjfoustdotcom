@@ -947,7 +947,8 @@ a {
   padding: 100px 0;
   max-width: 1000px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  background-color: #fff; }
 
 p {
   font-family: roboto;
@@ -1026,7 +1027,8 @@ strong {
   font-size: 40px; }
 
 .footer-stuff {
-  margin: 0 10%; }
+  margin: 0 10%;
+  background-color: #fff; }
 
 .hamburger-icon {
   z-index: 1000;
